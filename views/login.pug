@@ -1,0 +1,116 @@
+doctype html
+html
+  head
+    title Login Page
+    style.
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #0066ff, #00c6ff);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .login-container {
+        background: #fff;
+        width: 350px;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        text-align: center;
+        animation: fadeIn 0.6s ease-in-out;
+      }
+
+      .login-container h2 {
+        margin-bottom: 25px;
+        color: #0066ff;
+        font-size: 26px;
+      }
+
+      .input-group {
+        margin-bottom: 20px;
+        text-align: left;
+      }
+
+      .input-group label {
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 6px;
+        display: block;
+      }
+
+      .input-group input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        outline: none;
+        font-size: 14px;
+        transition: border-color 0.3s;
+      }
+
+      .input-group input:focus {
+        border-color: #0066ff;
+        box-shadow: 0 0 6px rgba(0,102,255,0.3);
+      }
+
+      .login-btn {
+        width: 100%;
+        padding: 12px;
+        background: linear-gradient(90deg, #0066ff, #00c6ff);
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .login-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      }
+
+      .extra-links {
+        margin-top: 20px;
+        font-size: 14px;
+      }
+
+      .extra-links a {
+        color: #0066ff;
+        text-decoration: none;
+        margin: 0 5px;
+      }
+
+      .extra-links a:hover {
+        text-decoration: underline;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+  body
+    .login-container
+      h2 Login
+      form(action="/login" method="POST")
+        .input-group
+          label(for="email") Email
+          input#email(type="email" name="email" placeholder="Enter your email" required)
+
+        .input-group
+          label(for="password") Password
+          input#password(type="password" name="password" placeholder="Enter your password" required)
+
+        button.login-btn(type="submit") Login
+
+    //-   .extra-links
+    //-     p
+    //-       | Don’t have an account? 
+    //-       a(href="/register") Register
+    //-     p
+    //-       a(href="/forgot-password") Forgot Password?

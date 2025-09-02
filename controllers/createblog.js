@@ -33,5 +33,12 @@ exports.shows=(req, res) => {
 
   res.render('show', { blog });
 } 
+
+exports.delete=(req,res)=>{
+  const blogId=parseInt(req.params.id);
+  const blog=blogs.find(b=>b.id===blogId);
+  blogs.splice(blog, 1); 
+  res.redirect('/showblog')
+}
      
  
