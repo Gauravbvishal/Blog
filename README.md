@@ -15,7 +15,8 @@ Users can create, preview, and view blog posts with a clean and modern UI.
 
 - ✍️ **Create Blogs** – Add new blog posts easily  
 - 👀 **Preview Blogs** – See dynamic previews before publishing  
-- 📖 **View Blogs** – Browse through all blog posts in card view  
+- 📖 **View Blogs** – Browse through all blog posts in card view 
+- 📖 **Delete Blogs** – Dynamically delete blog posts in card view   
 - 🔗 **Dynamic Routes** – Each blog has its own unique page  
 - 🎨 **Responsive Design** – Grid-based layout with hover effects  
 

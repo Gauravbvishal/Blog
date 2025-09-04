@@ -119,6 +119,7 @@ html
             h2= blog.title
             p= blog.content
             a.read-more(href=`/blog/${blog.id}`) Read more →
+            //- a.del-btn(href=`/edit/${blog.id}`) Edit
             a.del-btn(href=`/delete/${blog.id}`) Delete
       else
         p.no-posts No blog posts available yet.

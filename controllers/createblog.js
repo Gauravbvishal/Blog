@@ -17,7 +17,7 @@ exports.getData = (req, res, next) => {
         content: blog.content
     }
     blogs.push(data);
-    console.log(blogs)
+    // console.log(blogs)
     res.redirect('/showblog')
 }
 exports.sendData = (req, res) => {
@@ -37,8 +37,13 @@ exports.shows=(req, res) => {
 exports.delete=(req,res)=>{
   const blogId=parseInt(req.params.id);
   const blog=blogs.find(b=>b.id===blogId);
+  console.log(blog.id);
   blogs.splice(blog, 1); 
-  res.redirect('/showblog')
+  res.redirect('/showblog');
 }
-     
+// exports.editblog=(req,res)=>{
+//   const blogId=parseInt(req.params.id);
+//   const blog=blogs.filter(b=>b.id===blogId);
+
+// }     
  

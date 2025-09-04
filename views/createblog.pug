@@ -138,10 +138,10 @@ html
       form(action="/blog" method="POST")
         div
           label(for="title") Title:
-          input(type="text" name="title" id="title" required)
+          input(type="text" name="title" id="title" placeholder="enter title" required  )
         div
           label(for="content") Content:
-          textarea(name="content" id="content" rows="5" required)
+          textarea(name="content" id="content" rows="5" placeholder="Enter the text" required)
         div
           button(type="submit") Publish
 
