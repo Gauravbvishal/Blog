@@ -1,0 +1,109 @@
+doctype html
+html
+  head
+    title Footer Example
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css")
+    style.
+      footer {
+        background: linear-gradient(90deg, #0066ff, #00c6ff);
+        color: white;
+        padding: 40px 20px 20px;
+        margin-top: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .footer-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 30px;
+        margin-bottom: 20px;
+      }
+
+      .footer-section h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        border-bottom: 2px solid rgba(255,255,255,0.3);
+        padding-bottom: 5px;
+      }
+
+      .footer-section p,
+      .footer-section ul {
+        font-size: 14px;
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      .footer-section ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .footer-section ul li {
+        margin: 6px 0;
+      }
+
+      .footer-section ul li a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .footer-section ul li a:hover {
+        color: #ffeb3b;
+      }
+
+      .social-icons a {
+        display: inline-block;
+        margin-right: 12px;
+        font-size: 18px;
+        color: white;
+        transition: transform 0.3s, color 0.3s;
+      }
+
+      .social-icons a:hover {
+        color: #ffeb3b;
+        transform: scale(1.2);
+      }
+
+      .footer-bottom {
+        text-align: center;
+        font-size: 14px;
+        border-top: 1px solid rgba(255,255,255,0.3);
+        padding-top: 15px;
+        opacity: 0.9;
+      }
+
+  body
+    footer
+      .footer-container
+        .footer-section
+          h3 About
+          p My Blog is a platform to share knowledge, experiences, and ideas with the world. 
+            | We aim to inspire, educate, and connect through writing.
+
+        .footer-section
+          h3 Quick Links
+          ul
+            li: a(href="/blog") Create Blog
+            li: a(href="/showblog") All Blogs
+
+        .footer-section
+          h3 Contact
+          p 📍 Bengaluru, India
+          p 📧 contact@myblog.com
+          p 📞 +91 7970362511
+
+        .footer-section
+          h3 Follow Us
+          .social-icons
+            a(href="https://facebook.com" target="_blank")
+              i.fab.fa-facebook
+            a(href="https://twitter.com" target="_blank")
+              i.fab.fa-twitter
+            a(href="https://instagram.com" target="_blank")
+              i.fab.fa-instagram
+            a(href="https://linkedin.com" target="_blank")
+              i.fab.fa-linkedin
+
+      .footer-bottom
+        p © 2025 My Blog | All Rights Reserved

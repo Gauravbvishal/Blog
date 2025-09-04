@@ -12,18 +12,18 @@ html
       }
 
       /* HEADER */
-      header {
-        background: linear-gradient(90deg, #0066ff, #00c6ff);
-        color: white;
-        padding: 20px;
-        text-align: center;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-      }
-      header h1 {
-        margin: 0;
-        font-size: 28px;
-        font-weight: bold;
-      }
+      //- header {
+      //-   background: linear-gradient(90deg, #0066ff, #00c6ff);
+      //-   color: white;
+      //-   padding: 20px;
+      //-   text-align: center;
+      //-   box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      //- }
+      //- header h1 {
+      //-   margin: 0;
+      //-   font-size: 28px;
+      //-   font-weight: bold;
+      //- }
 
       /* BLOG LIST */
       .container {
@@ -110,7 +110,7 @@ html
 
   body
     header
-      include header.pug 
+      include includes/header.pug 
 
     .container
       if blogs.length
@@ -123,3 +123,6 @@ html
             a.del-btn(href=`/delete/${blog.id}`) Delete
       else
         p.no-posts No blog posts available yet.
+    footer 
+        include includes/footer
+    

@@ -14,7 +14,8 @@ exports.getData = (req, res, next) => {
     const data = {
         id:id,
         title: blog.title,
-        content: blog.content
+        content: blog.content,
+       
     }
     blogs.push(data);
     // console.log(blogs)

@@ -77,11 +77,16 @@ html
       }
   body
     header
-      h1 Blog Details
+      include includes/header
+       
 
     .container
       h1= blog.title
       p= blog.content
-
+      image=blog.image
       
       a.back-btn(href="/showblog") ← Back to Blogs
+    
+    footer 
+        include includes/footer
+      

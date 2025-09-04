@@ -9,43 +9,7 @@ html
         background: #f4f7fa;
         color: #333;
       }
-
-      /* HEADER */
-      header {
-        background: linear-gradient(90deg, #0066ff, #00c6ff);
-        color: white;
-        padding: 15px 40px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-      }
-      header h1 {
-        margin: 0;
-        font-size: 26px;
-        font-weight: bold;
-      }
-      nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        gap: 25px;
-      }
-      nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 16px;
-        padding: 6px 12px;
-        border-radius: 5px;
-        transition: background 0.3s, color 0.3s;
-      }
-      nav ul li a:hover {
-        background: rgba(255,255,255,0.2);
-        color: #ffeb3b;
-      }
-
+      
       /* CONTAINER */
       .container {
         width: 80%;
@@ -107,31 +71,16 @@ html
       .post h2 {
         margin: 0 0 8px;
         color: #333;
+        
       }
       .post p {
         color: #555;
       }
 
-      /* FOOTER */
-      footer {
-        margin-top: 30px;
-        background: #333;
-        color: #ccc;
-        text-align: center;
-        padding: 15px;
-        font-size: 14px;
-      }
-      footer a {
-        color: #00c6ff;
-        text-decoration: none;
-      }
-      footer a:hover {
-        text-decoration: underline;
-      }
-
+     
   body
     header
-      include header.pug  
+      include includes/header.pug  
 
     .container
       h2 Write a New Post
@@ -146,4 +95,5 @@ html
           button(type="submit") Publish
 
     footer
-      p © 2025 My Blog | Built with ❤️ by Vishal
+      include includes/footer.pug
+     
