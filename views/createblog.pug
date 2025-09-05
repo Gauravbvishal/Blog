@@ -1,6 +1,7 @@
 doctype html
 html
   head
+    title Create Blog
     style.
       body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -71,13 +72,11 @@ html
       .post h2 {
         margin: 0 0 8px;
         color: #333;
-        
       }
       .post p {
         color: #555;
       }
 
-     
   body
     header
       include includes/header.pug  
@@ -87,7 +86,7 @@ html
       form(action="/blog" method="POST")
         div
           label(for="title") Title:
-          input(type="text" name="title" id="title" placeholder="enter title" required  )
+          input(type="text" name="title" id="title" placeholder="enter title" required)
         div
           label(for="content") Content:
           textarea(name="content" id="content" rows="5" placeholder="Enter the text" required)
@@ -95,5 +94,6 @@ html
           button(type="submit") Publish
 
     footer
-      include includes/footer.pug
-     
+      include includes/footer.pug  
+
+    

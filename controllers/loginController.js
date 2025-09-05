@@ -7,7 +7,7 @@ exports.getlogin=(req,res)=>{
 
 exports.postlogin=(req,res)=>{
    const{email,password}=req.body;
-   if(email==="vishalgaurav785@gmail.com" && password==="vishal123"){
+   if(email==="user123@gmail.com" && password==="user123"){
      res.redirect('/blog')
    }
    else{

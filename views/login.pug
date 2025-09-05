@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title Modern Login Page
+    title Login Page
     style.
       * {
         margin: 0;
@@ -117,11 +117,11 @@ html
       form(action="/login" method="POST")
         .input-group
           label(for="email") Email
-          input#email(type="email" name="email" placeholder="Enter your email" required)
+          input#email(type="email" name="email" placeholder="Enter your email" value="user123@gmail.com" required)
 
         .input-group
           label(for="password") Password
-          input#password(type="password" name="password" placeholder="Enter your password" required)
+          input#password(type="password" name="password" placeholder="Enter your password" value="user123" required)
 
         button.login-btn(type="submit") Login
 
